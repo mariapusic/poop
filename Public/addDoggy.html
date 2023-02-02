@@ -1,21 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <!-- <link rel="stylesheet" href="bootstrap.css"> -->
+    <link rel="stylesheet" href="styles.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Doggy</title>
 </head>
+
 <body>
+    <h1>Lägg till hund:</h1>
     <form action="/Doggy" method="post">
-        <input type="text" id="breed" placeholder="Skriv in ras">
-        <input type="text" id="lifespan" placeholder="Skriv in livslängd">
-        <input type="text" id="height" placeholder="Skriv in mankhöjd">
-        <input type="text" id="colors" placeholder="Skriv in färger">
-        <input type="text" id="weight" placeholder="Skriv in vikt">
-        <button type="button" id="AddButton">Lägg till hund</button>
+        <table class="table">
+            <tbody>
+            <tr>
+                <td>
+                    <input type="text" id="breed" placeholder="Skriv in ras">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="lifespan" placeholder="Skriv in livslängd">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="height" placeholder="Skriv in mankhöjd">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="colors" placeholder="Skriv in färger">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="weight" placeholder="Skriv in vikt">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="button-82-pushable" role="button">
+                        <span class="button-82-shadow"></span>
+                        <span class="button-82-edge"></span>
+                        <span class="button-82-front text">
+                          Lägg till hund
+                        </span>
+                      </button>
+                </td>
+            </tr>
+        </tbody>
+        </table>
     </form>
     <span id="result"></span>
     <script src="addDoggy.js"></script>
 </body>
+
 </html>

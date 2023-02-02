@@ -29,19 +29,11 @@ app.delete("/Doggy/:id",(req,res) => {
     Doggies.allDoggies.splice(doggyId,1)
     res.send("Doggy deleted!!!!")
 })
-// app.get("/addDoggy", (req,res) => {
-//     res.sendFile(__dirname + "/addDoggy.html")
-// })
+
 app.post("/Doggy", (req,res) => {
     const {breed, lifespan, height, colors, weight} = req.body
     console.log(req.body)
-    // let breed = req.body.breed
-    // let lifespan = req.body.lifespan
-    // let height = req.body.height
-    // let colors = req.body.colors
-    // let weight = req.body.weight
     Doggies.allDoggies.push({id:Doggies.allDoggies.length +1, breed:breed, lifespan:lifespan, height:height, colors:colors, weight:weight})
-    // Doggies.allDoggies.push(req.body)
     res.send("Doggy added!!!!!")
 
 })
